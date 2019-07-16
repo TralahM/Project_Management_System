@@ -6,8 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django-heroku
-gunicorn
+django-heroku="*"
+gunicorn="*"
 boto3 = "==1.6.23"
 botocore = "==1.9.23"
 dj-database-url = "==0.5.0"
