@@ -10,8 +10,18 @@
 * Views by Users, by Tasks and Projects
 * Login and Logout, Create your Profile, update Profile picture
 * Interact with other users sending friendly requests, add and remove friends
-* Hosted at: http://gui-projects.herokuapp.com/
+* Hosted at: http://pmstek.herokuapp.com/
 * Integration with Amazon AWS S3 for static files
+
+## TODO
+* Add Google Oauth for registration
+* Add Support for HR API of employees
+* Add Private Public Flags for Projects for User Access Control
+* Add Company Logo
+* Customize logo
+* Add CSV file upload for tasks
+* Modify task and project attributes to capture more data
+
 
 ## Built With:
 
