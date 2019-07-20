@@ -1,0 +1,11 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: efay/vDHDgApk2l2sIvMJ+KWWPc5Mqo/trzC7lang38r83MS8Bx6n7F+OCWNCuWIEOMW69c0GxMwgLc8hECJ+OHMiM33M5+8chGcgWKyOVVKE40ZIDgHu/qmmbcwRnY8eehD0XOZ6WBYmjBbLJ3n5yoPDvTgEt7gtJ0nUyxBdUhok+cIyPdEyKCMXXbDUzZ1VJHk0qrjzwnZ0wXdyGKPGuOGIuhRH/xLMfGRId2Bcp2sbovVbs7PG+U9Z0nTDQS2XNdsnRyEuBVbZieflUEpG7JjSIBq0kn7JcnKLqaKTGnWEWHGCHZLgxLW0C3QPi8MNkOeF367z8LeRQgU6I0PiepgtsKuh+qorjTyZmYCnl8MUXOfUGcOgl/sR7tLec5ekK8GtRNM1Bv3T937HS7K5wtaisuj5N9bxvQD284ZBUc5WUYETxoNReGa2RLbyWO0bcS283rjud30RJ5BUqYh7tEGLVSdGW1s5Psy6vTmQIeQ48heYFayc5IKsOORNk4baNvOa7+xS5JXgOsbomK2zmYA35Gr4IY2JvGdoHqHo/YSxXkW161du+KxzEMlh7hUVXkZR5mei7CMkNptZi90YrR0r0UJEpIZujPRDYGxYiFHhCUPhbXbtUy6szgcOXfg7OChLTYoPrHn7GT4TC3j189RqsOSNx8IXoh1y2uPkdc=
+  app: pmstek
+  skip_cleanup: true
+  run:
+      - "python manage.py makemigrations"
+      - "python manage.py migrate"
+      - restart
+  strategy: git
