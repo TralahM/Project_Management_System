@@ -1,3 +1,6 @@
+
+# Dolphin
+.directory
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -8,6 +11,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -39,6 +43,7 @@ htmlcov/
 .tox/
 .coverage
 .coverage.*
+nohup.out
 .cache
 nosetests.xml
 coverage.xml
@@ -73,36 +78,34 @@ target/
 .python-version
 
 # celery beat schedule file
-celerybeat-schedule
+celerybeat-schedule*
 
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# dotenv
 .env
+
+# virtualenv
 .venv
-env/
 venv/
 ENV/
+env/
 
 # Spyder project settings
 .spyderproject
 .spyproject
 
 # Rope project settings
-.ropeproject
+.ropeproject/
 
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
-*.xml
-.idea/*
-!venv\Lib\site-packages\django\contrib\auth\models.py
-db.sqlite3
 
-core/media/*
+# PyCharm
+.idea/
 
-static/*
-core/static*
+.*~
